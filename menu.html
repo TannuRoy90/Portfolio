@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Menu</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#ff9a44,#fc6076);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.menu-container{
+    width:90%;
+    max-width:900px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.header{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.header p{
+    color:#ddd;
+}
+
+.menu-section{
+    padding:25px;
+}
+
+.section-title{
+    color:#fc6076;
+    margin-bottom:20px;
+    font-size:28px;
+    border-bottom:3px solid #fc6076;
+    display:inline-block;
+}
+
+.menu-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+    border-bottom:1px solid #eee;
+}
+
+.food-name{
+    font-size:20px;
+    font-weight:600;
+    color:#333;
+}
+
+.food-desc{
+    font-size:14px;
+    color:#777;
+    margin-top:5px;
+}
+
+.price{
+    font-size:22px;
+    font-weight:bold;
+    color:#ff5722;
+}
+
+.footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+@media(max-width:600px){
+    .menu-item{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .price{
+        margin-top:10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="menu-container">
+
+    <div class="header">
+        <h1>🍽 Delicious Restaurant</h1>
+        <p>Fresh Food • Great Taste • Affordable Prices</p>
+    </div>
+
+    <div class="menu-section">
+        <h2 class="section-title">Main Course</h2>
+
+        <div class="menu-item">
+            <div>
+                <div class="food-name">Paneer Butter Masala</div>
+                <div class="food-desc">Creamy tomato gravy with fresh paneer.</div>
+            </div>
+            <div class="price">₹250</div>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <div class="food-name">Veg Biryani</div>
+                <div class="food-desc">Aromatic rice with vegetables & spices.</div>
+            </div>
+            <div class="price">₹220</div>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <div class="food-name">Chicken Curry</div>
+                <div class="food-desc">Traditional spicy chicken curry.</div>
+            </div>
+            <div class="price">₹320</div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2 class="section-title">Fast Food</h2>
+
+        <div class="menu-item">
+            <div>
+                <div class="food-name">Burger</div>
+                <div class="food-desc">Loaded with cheese and veggies.</div>
+            </div>
+            <div class="price">₹120</div>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <div class="food-name">Pizza</div>
+                <div class="food-desc">Cheesy delight with fresh toppings.</div>
+            </div>
+            <div class="price">₹299</div>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <div class="food-name">French Fries</div>
+                <div class="food-desc">Crispy golden fries.</div>
+            </div>
+            <div class="price">₹99</div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2 class="section-title">Drinks</h2>
+
+        <div class="menu-item">
+            <div>
+                <div class="food-name">Cold Coffee</div>
+                <div class="food-desc">Refreshing chilled coffee.</div>
+            </div>
+            <div class="price">₹150</div>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <div class="food-name">Mango Shake</div>
+                <div class="food-desc">Fresh mango blended with milk.</div>
+            </div>
+            <div class="price">₹130</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 Delicious Restaurant | Contact: +91 9876543210
+    </div>
+
+</div>
+
+</body>
+</html>
